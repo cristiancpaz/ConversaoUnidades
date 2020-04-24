@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Document</title>
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: cornflowerblue;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        .cont{
+            display: inline-flex;
+            margin: 10px 20px;
+        }
+        .container {
+            background-color: #fff;
+            width: 450px;
+            display: block;
+            min-height: 150px;
+            margin-left: 200px;
+            margin-right: 100px;
+            margin-top: 100px;
+            text-align: center;
+            border-radius: 5px;
+            padding: 10px;
+            
+        }
+        .container_2 {
+            background-color: #fff;
+            width: 450px;
+            display: block;
+            min-height: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            text-align: center;
+            border-radius: 5px;
+            padding: 10px;
+
+            
+        }
+        #form {
+            font-size: 20px;
+        }
+        #form2 {
+            font-size: 20px;
+        }
+
+    </style>
+    
+</head>
+<body>
+     <section class="cont">   
+    <section class="container">
+        <h1>Conversão de Temperatura</h1>
+        <form action="/" id="form" method="POST">
+            <label for="tempC">Celsius => Farenheight</label> 
+            <input type="text" id="tempC" name="tempC">
+            <button  type="submit">Calcular</button>
+        </form>
+        <div id="resultado"> </div>
+    </section>
+
+    <section class="container_2">
+            <h1>Conversão de Pressão</h1>
+            <form action="/" id="form2" method="POST">
+                <label for="press">Psi => Bar</label> 
+                <input type="text" id="press" name="press">
+                <button  type="submit">Calcular</button>
+            </form>
+            <div id="resultado2"> </div>
+    </section>
+</section>
+    <script src="script2.js"></script> 
+
+    
+</body>
+</html>
